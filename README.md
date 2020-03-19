@@ -29,10 +29,10 @@ After creating this file and adding it to your project, you will be able to sear
 #### CocoaPods Used
 This project the following [CocoaPods](http://cocoapods.org/:
 
-[CrytoSwift](https://github.com/krzyzanowskim/CryptoSwift)
-\n[Alamofire](https://github.com/Alamofire/Alamofire) /n
-\n[SDWebImage](https://github.com/SDWebImage/SDWebImage)\n
-\n[SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)\n
+[CrytoSwift](https://github.com/krzyzanowskim/CryptoSwift)<br/>
+[Alamofire](https://github.com/Alamofire/Alamofire)<br/>
+\n[SDWebImage](https://github.com/SDWebImage/SDWebImage)<br/>
+\n[SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)<br/>
 
 Your Podfile should look like this: 
 
