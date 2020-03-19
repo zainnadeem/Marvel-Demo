@@ -31,8 +31,8 @@ This project the following [CocoaPods](http://cocoapods.org/:
 
 [CrytoSwift](https://github.com/krzyzanowskim/CryptoSwift)<br/>
 [Alamofire](https://github.com/Alamofire/Alamofire)<br/>
-\n[SDWebImage](https://github.com/SDWebImage/SDWebImage)<br/>
-\n[SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)<br/>
+[SDWebImage](https://github.com/SDWebImage/SDWebImage)<br/>
+[SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)<br/>
 
 Your Podfile should look like this: 
 
