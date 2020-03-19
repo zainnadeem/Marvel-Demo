@@ -2,6 +2,8 @@
 
 This repository allows developers to view Marvel comic book covers, titles & descriptions. All the information is received from Marvels API accessable through the portal at developer.marvel.com.
 
+![alt text](https://github.com/zainnadeem/Marvel-Demo/blob/master/Silver-Surfer-Cates-min.png)
+
 ## Adding API Keys
 In order to utilize the application please obtain a public and private key from Marvel.
 
