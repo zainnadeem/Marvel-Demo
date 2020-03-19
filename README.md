@@ -18,6 +18,14 @@ Private <YOUR PRIVATE KEY>
 
 After creating this file and adding it to your project, you will be able to search comic books by Id. Some searchable ID's for testing:
 
+61756 - The Unstoppable Wasp (2017) #2
+73111 - HOUSE OF X/POWERS OF X TPB (Trade Paperback)
+76405 - League of Legends: Zed (2019) #6
+89889 - EMPYRE MAGAZINE (2020) #1
+81180 - Ant-Man (2020) #4
+80120 - Star Wars: Bounty Hunters (2020) #2
+88112 - True Believers: Empyre - Lyja (2020) #1
+77236 - Captain America (2018) #20
 
 ## Features
 
