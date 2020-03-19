@@ -7,28 +7,34 @@
 //
 
 import XCTest
+import SwiftyJSON
+import Alamofire
+import Marvel_Demo
+
 @testable import Marvel_Demo
 
 class Marvel_DemoTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    var testId = "61756"
+    func testRequestComicWithIdCall() {
+        let expect = expectation(description: "Download should succeed")
+        MarvelAPICall.shared.requestComicById(id: testId) { (response, error) in
+            if let err = error {
+                XCTFail("API response error: \(err.localizedDescription)")
+            }
+            XCTAssertNil(error, "Unexpected error occured: \(String(describing: error?.localizedDescription))")
+            if let res = response {
+                let detailWorker = DetailWorker()
+                let responseObject = detailWorker.comicDetailParser(res)
+                XCTAssertEqual(responseObject.coverImageURL, "http://i.annihil.us/u/prod/marvel/i/mg/f/b0/588bbfe8ecc21", file: "Image URL was incorrect")
+                XCTAssertEqual(responseObject.title, "The Unstoppable Wasp (2017) #2", file: "Title was incorrect")
+                XCTAssertEqual(responseObject.description, "Nadia is on a mission to bring together the brightest Girl Geniuses of the Marvel Universe and change the world, but first, she has to figure out how to find them and get them to join her. With her chaperone Jarvis by her side, her first recruiting mission is going to take her to Washington Heights in search of one of the greatest young engineering minds of our time...one no one has even heard of. Guest-starring Lunella Lafayette, The Miraculous Moon Girl!", file: "Description was incorrect")
+            }
+            expect.fulfill()
         }
+        waitForExpectations(timeout: 10) { (error) in
+            XCTAssertNil(error, "Test timed out. \(String(describing: error?.localizedDescription))")
+        }
+        
     }
 
 }
