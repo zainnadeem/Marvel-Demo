@@ -9,37 +9,25 @@
 import UIKit
 import SwiftyJSON
 
-class DetailWorker
-  {
-     func submitRequest(request: Detail.Comic.Request, completion: @escaping  (_ response: Detail.Comic.Response)->Void){
+class DetailWorker {
+    /**
+     Hits the request comic by Id function inside of the Marvel API and passes the response back to the DetailViewInteractor.
+     - parameter request: request object received from interactor
+     */
+    func submitRequest(request: Detail.Comic.Request, completion: @escaping  (_ response: Detail.Comic.Response)->Void){
         MarvelAPICall.shared.requestComicById(id: request.comicID) { (response, error) in
-            var comic = Detail.Comic.Response(title: "", description: "", coverImageURL: "")
+            var comic = Detail.Comic.Response()
+            //If request returns an error, the response object is populated with an error.
             if let err = error {
                 comic.error = err.localizedDescription
+                //Consider refactoring, It is unknown if the API can return an error and still return an object.
                 completion(comic)
             }
+            //Retrun response object after parsing
             guard let res = response else { return }
-            completion(self.comicDetailParser(res))
+            completion(Detail.Comic.Response(title: res.title, description: res.description, coverImageURL: res.coverImageURL, id: res.id, error: nil))
         }
     }
+    
 
-    public func comicDetailParser(_ json: Any)->Detail.Comic.Response{
-        var comic = Detail.Comic.Response(title: "", description: "", coverImageURL: "")
-        let json = JSON(json)
-        let data = json["data"].dictionaryValue
-        let results = data["results"]?.arrayObject
-        let resultObject = results as? [[String : Any]] ?? []
-            
-        if let first = resultObject.first {
-                comic.description = first["description"] as? String ?? ""
-                comic.title = first["title"] as? String ?? ""
-                if let images = first["images"] {
-                    let imagesArray = images as! [[String : Any]]
-                    if let firstImageArray = imagesArray.first {
-                    comic.coverImageURL = firstImageArray["path"] as! String
-                    }
-                }
-            }
-        return comic
-    }
 }

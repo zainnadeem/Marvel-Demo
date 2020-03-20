@@ -14,20 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+         //Create initial view controller programmtically
         self.window = UIWindow(frame: UIScreen.main.bounds)
-            let navigationController = UINavigationController(rootViewController: DetailViewController())
-            navigationController.navigationBar.backgroundColor = UIColor.init(red: 32/255, green: 33/255, blue: 34/255, alpha: 1)
-            self.window?.rootViewController = navigationController
-            self.window?.makeKeyAndVisible()
-
-        MarvelAPICall.shared.requestAllComics { (any) in
-            
-        }
-   
+        let navigationController = UINavigationController(rootViewController: DetailViewController())
+        navigationController.navigationBar.backgroundColor = marvelGrey
+        self.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
         return true
     }
-
-
-
 }
 

@@ -6,27 +6,35 @@
 //  Copyright (c) 2020 Zain Nadeem. All rights reserved.
 
 import UIKit
-
-enum Detail
-{
-    enum Comic
-    {
-        struct Request
-        {
-            var comicID: String
+/**
+ Objects are specific to the Detail scene
+ */
+enum Detail {
+    enum Comic {
+        /**
+         Object passed to make API request
+         */
+        struct Request {
+            var comicID: Int
         }
-        struct Response
-        {
-            var title: String
-            var description: String
-            var coverImageURL: String
+        /**
+         Object received from API
+         */
+        struct Response {
+            var title: String = ""
+            var description: String = ""
+            var coverImageURL: String = ""
+            var id: Int = 0
             var error: String?
         }
-        struct ViewModel
-        {
-            var title: String
-            var description: String
-            var coverImageURL: String
+        /**
+         Formated object for viewcontroller
+         */
+        struct ViewModel {
+            var title: String = ""
+            var description: String = ""
+            var coverImageURL: String = ""
+            var id: Int = 0
         }
     }
 }
