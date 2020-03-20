@@ -70,4 +70,6 @@ The DetailScene contains special objects located at DetailModels to pass data th
         presenter.viewController = viewController
     }
 ```
+## Accessibility 
 
+The app offers the ability to have the title and description of the comic read aloud. To enable this function navigate to<br/> Settings > Accessibility > VoiceOver
