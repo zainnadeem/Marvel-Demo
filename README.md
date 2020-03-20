@@ -15,6 +15,7 @@ Create a file named ApiKeys.plist and at two items under root.
 Public <YOUR PUBLIC KEY>
 Private <YOUR PRIVATE KEY>
 ```
+[Additional information of handling public and private keys with plists.](https://dev.iachieved.it/iachievedit/using-property-lists-for-api-keys-in-swift-applications/)
 
 After creating this file and adding it to your project, you will be able to search comic books by Id. Some searchable ID's for testing:
 
