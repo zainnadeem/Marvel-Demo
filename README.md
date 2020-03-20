@@ -9,16 +9,19 @@ In order to utilize the application please obtain a public and private key from 
 
 [Get an API Key](https://developer.marvel.com)
 
-Create a file named ApiKeys.plist and at two items under root.
+The application will not build without creating an ApiKeys.plist file. Add a new file in your project and choose Property List from the resource template. 
 
+Name the file **ApiKeys.plist**<br/>
+Add two properties under root for your public and private keys:
 ```swift
 Public <YOUR PUBLIC KEY>
 Private <YOUR PRIVATE KEY>
 ```
-[Additional information of handling public and private keys with plists.](https://dev.iachieved.it/iachievedit/using-property-lists-for-api-keys-in-swift-applications/)
+*[Additional information of handling public and private keys with plists.](https://dev.iachieved.it/iachievedit/using-property-lists-for-api-keys-in-swift-applications/)
 
-After creating this file and adding it to your project, you will be able to search comic books by Id. Some searchable ID's for testing:
+After creating this file and adding it to your project. Run your application, you will be able to search comic books by Id. 
 
+Some searchable ID's for testing:
 61756 - The Unstoppable Wasp (2017) #2<br/>
 73111 - HOUSE OF X/POWERS OF X TPB (Trade Paperback)<br/>
 76405 - League of Legends: Zed (2019) #6<br/>
