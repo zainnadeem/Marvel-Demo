@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		83B0AB69277BA7E6721B12BF /* Pods_Marvel_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E201389A51E0BD62E21466F7 /* Pods_Marvel_DemoTests.framework */; };
 		9460BEA1B2C1E92860FAFC6D /* Pods_Marvel_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 346EB6F9A389AE6BFEEF7733 /* Pods_Marvel_Demo.framework */; };
-		BF45D11924232CDD006F8E06 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF45D11824232CDD006F8E06 /* ApiKeys.plist */; };
 		BF45D11B24232D7B006F8E06 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45D11A24232D7B006F8E06 /* ApiKeys.swift */; };
 		BF53BFB324219B6000CED19C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53BFB224219B6000CED19C /* AppDelegate.swift */; };
 		BF53BFB924219B6300CED19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF53BFB824219B6300CED19C /* Assets.xcassets */; };
@@ -25,6 +24,9 @@
 		BF53BFF02421C6F000CED19C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53BFEA2421C6F000CED19C /* DetailViewController.swift */; };
 		BF53BFF12421C6F000CED19C /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53BFEB2421C6F000CED19C /* DetailInteractor.swift */; };
 		BF53BFF42421DF1B00CED19C /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF53BFF32421DF1B00CED19C /* MarvelAPI.swift */; };
+		BF73AF302424765D0075AFD7 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF73AF2F2424765D0075AFD7 /* ApiKeys.plist */; };
+		BF73AF312424765D0075AFD7 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF73AF2F2424765D0075AFD7 /* ApiKeys.plist */; };
+		BF73AF322424777B0075AFD7 /* ApiKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF45D11A24232D7B006F8E06 /* ApiKeys.swift */; };
 		E65AB4B3EB4AC731D5E58A7B /* Pods_Marvel_Demo_Marvel_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CBB9F976A0DAD9437E802B /* Pods_Marvel_Demo_Marvel_DemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +54,6 @@
 		40CBB9F976A0DAD9437E802B /* Pods_Marvel_Demo_Marvel_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_Demo_Marvel_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE2DB17E74C158AF33CC369 /* Pods-Marvel-Demo-Marvel-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-Demo-Marvel-DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-Marvel-Demo-Marvel-DemoUITests/Pods-Marvel-Demo-Marvel-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BEC8ED696A3C957414840FC7 /* Pods-Marvel-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-Marvel-DemoTests/Pods-Marvel-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		BF45D11824232CDD006F8E06 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ApiKeys.plist; path = "Marvel-Demo/ApiKeys.plist"; sourceTree = SOURCE_ROOT; };
 		BF45D11A24232D7B006F8E06 /* ApiKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiKeys.swift; sourceTree = "<group>"; };
 		BF53BFAF24219B6000CED19C /* Marvel-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Marvel-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF53BFB224219B6000CED19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 		BF53BFEA2421C6F000CED19C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BF53BFEB2421C6F000CED19C /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		BF53BFF32421DF1B00CED19C /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
+		BF73AF2F2424765D0075AFD7 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		CA280EAC9ED9F995E3FE0468 /* Pods-Marvel-Demo-Marvel-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-Demo-Marvel-DemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marvel-Demo-Marvel-DemoUITests/Pods-Marvel-Demo-Marvel-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E201389A51E0BD62E21466F7 /* Pods_Marvel_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvel_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E82322BF4274D5116006DE15 /* Pods-Marvel-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel-Demo.release.xcconfig"; path = "Target Support Files/Pods-Marvel-Demo/Pods-Marvel-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,9 +157,9 @@
 		BF53BFB124219B6000CED19C /* Marvel-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				BF45D11824232CDD006F8E06 /* ApiKeys.plist */,
 				BF53BFB224219B6000CED19C /* AppDelegate.swift */,
 				BF45D11A24232D7B006F8E06 /* ApiKeys.swift */,
+				BF73AF2F2424765D0075AFD7 /* ApiKeys.plist */,
 				BF53BFF22421C6F800CED19C /* DetailScene */,
 				BF53BFE224219BA600CED19C /* Extensions.swift */,
 				BF53BFE424219CAB00CED19C /* Constants.swift */,
@@ -319,7 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF53BFBF24219B6300CED19C /* LaunchScreen.storyboard in Resources */,
-				BF45D11924232CDD006F8E06 /* ApiKeys.plist in Resources */,
+				BF73AF302424765D0075AFD7 /* ApiKeys.plist in Resources */,
 				BF53BFBC24219B6300CED19C /* Preview Assets.xcassets in Resources */,
 				BF53BFB924219B6300CED19C /* Assets.xcassets in Resources */,
 			);
@@ -329,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF73AF312424765D0075AFD7 /* ApiKeys.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF73AF322424777B0075AFD7 /* ApiKeys.swift in Sources */,
 				BF53BFCA24219B6300CED19C /* Marvel_DemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

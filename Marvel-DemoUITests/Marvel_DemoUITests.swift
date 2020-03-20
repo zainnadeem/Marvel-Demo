@@ -11,17 +11,20 @@ import XCTest
 class Marvel_DemoUITests: XCTestCase {
 
     func testExample() {
+        
         let app = XCUIApplication()
         app.launch()
-        let searchByIdButton = app.navigationBars["Marvel"].buttons["Search By Id"]
+        let marvelDemoNavigationBar = app.navigationBars["Marvel-Demo"]
+        let searchByIdButton = marvelDemoNavigationBar.buttons["Search By Id"]
         searchByIdButton.tap()
         
-        let elementsQuery = app.alerts["Search Comics"].scrollViews.otherElements
-        let okButton = elementsQuery.buttons["OK"]
-        okButton.tap()
+        let okayButton = app.alerts["Search Comics"].scrollViews.otherElements.buttons["Okay"]
+        okayButton.tap()
         searchByIdButton.tap()
-        elementsQuery.collectionViews.cells.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .textField).element.tap()
-        okButton.tap()
+        okayButton.tap()
+        marvelDemoNavigationBar.buttons["VoiceOver"].tap()
+        app.alerts["Enable VoiceOver"].scrollViews.otherElements.buttons["Okay"].tap()
+
     }
 
     func testLaunchPerformance() {
