@@ -13,8 +13,7 @@ protocol DetailBusinessLogic
 }
 
 
-class DetailInteractor: DetailBusinessLogic
-{
+class DetailInteractor: DetailBusinessLogic{
   var presenter: DetailPresentationLogic?
   var worker: DetailWorker?
   
