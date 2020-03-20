@@ -27,7 +27,6 @@ struct Comic {
 class MarvelCachedComics {
     static let shared = MarvelCachedComics()
     var comicById = [Int : Comic]()
-    
     func cacheComic(comic: Comic) {
         comicById[comic.id] = comic
     }
@@ -45,7 +44,7 @@ class MarvelAPICall {
         ]
         var request = URLRequest(url: url)
         request.httpMethod = HTTPMethod.get.rawValue
-        request.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")    
+        request.setValue("application/json; charset=UTF-8", forHTTPHeaderField: "Content-Type")
         AF.request(url, parameters: params).responseJSON(completionHandler: { (response) in
             switch response.result {
             case .success(let value):
