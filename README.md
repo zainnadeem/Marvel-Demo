@@ -21,7 +21,7 @@ Private <YOUR PRIVATE KEY>
 
 After creating this file and adding it to your project. Run your application, you will be able to search comic books by Id. 
 
-Some searchable ID's for testing:
+**Some searchable ID's for testing:**<br/>
 61756 - The Unstoppable Wasp (2017) #2<br/>
 73111 - HOUSE OF X/POWERS OF X TPB (Trade Paperback)<br/>
 76405 - League of Legends: Zed (2019) #6<br/>
@@ -33,7 +33,8 @@ Some searchable ID's for testing:
 
 ## Features
 
-- [x] Search Comic By ID
+- [x] Browse Comic By ID
+- [x] Listen to app title & description
 
 ## XCODE Version
 - Xcode 11.3.1
