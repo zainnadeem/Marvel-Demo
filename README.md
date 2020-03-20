@@ -1,6 +1,6 @@
 # Marvel-Demo
 
-This repository allows developers to view Marvel comic book covers, titles & descriptions. All the information is received from Marvels API accessable through the portal at developer.marvel.com.
+This repository allows developers to view Marvel comic book covers, titles & descriptions. All the information is received from Marvel's API accessible through the portal at developer.marvel.com.
 
 ![alt text](https://github.com/zainnadeem/Marvel-Demo/blob/master/Silver-Surfer-Cates-min.png)
 
@@ -40,7 +40,7 @@ After creating this file and adding it to your project. Run your application, yo
 - Xcode 11.3.1
 
 #### CocoaPods Used
-This project the following [CocoaPods](http://cocoapods.org)
+This project uses the following [CocoaPods](http://cocoapods.org)
 
 [CrytoSwift](https://github.com/krzyzanowskim/CryptoSwift)<br/>
 [Alamofire](https://github.com/Alamofire/Alamofire)<br/>
@@ -81,4 +81,4 @@ The app offers the ability to have the title and description of the comic read a
 
 ## Scroll View
 
-The decision to create scrollView for the detail screen will allow additional information to be displayed in future updates of this application
+The decision to create a scrollView for the detail screen will allow additional information to be displayed in future updates of this application
