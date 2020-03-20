@@ -40,7 +40,7 @@ After creating this file and adding it to your project. Run your application, yo
 - Xcode 11.3.1
 
 #### CocoaPods Used
-This project the following [CocoaPods](http://cocoapods.org/:
+This project the following [CocoaPods](http://cocoapods.org)
 
 [CrytoSwift](https://github.com/krzyzanowskim/CryptoSwift)<br/>
 [Alamofire](https://github.com/Alamofire/Alamofire)<br/>
